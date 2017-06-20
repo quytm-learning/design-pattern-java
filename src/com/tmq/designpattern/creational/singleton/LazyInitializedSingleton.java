@@ -21,7 +21,8 @@ public class LazyInitializedSingleton {
         return instance;
     }
 
-    public void printCache() {
+    public void printCache(int index) {
+        cache += ("_" + index);
         System.out.println(cache);
     }
 }
