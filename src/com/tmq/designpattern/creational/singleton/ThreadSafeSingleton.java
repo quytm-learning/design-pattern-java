@@ -35,6 +35,7 @@ public class ThreadSafeSingleton {
 
     public synchronized void printCache(int index) {
         cache += ("_" + index);
+        System.out.println("----------------------" + System.currentTimeMillis());
         System.out.println(cache);
     }
 }
