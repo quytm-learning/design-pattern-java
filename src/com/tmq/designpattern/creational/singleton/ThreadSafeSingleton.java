@@ -33,7 +33,7 @@ public class ThreadSafeSingleton {
         return instance;
     }
 
-    public void printCache(int index) {
+    public synchronized void printCache(int index) {
         cache += ("_" + index);
         System.out.println(cache);
     }
