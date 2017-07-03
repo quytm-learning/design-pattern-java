@@ -1,6 +1,5 @@
 package com.tmq.designpattern.structural.practice.adapter;
 
-import com.tmq.designpattern.structural.practice.adapter.model.Language;
 import com.tmq.designpattern.structural.practice.adapter.model.Person;
 
 /**
