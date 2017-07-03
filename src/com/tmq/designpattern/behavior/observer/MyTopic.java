@@ -41,4 +41,11 @@ public class MyTopic implements Subject {
     public Object getUpdate(Observer observer) {
         return message;
     }
+
+    public void postMessage(String message) {
+        System.out.println("Message Posted to Topic: " + message);
+        this.message = message;
+        this.changed = true;
+        notifyObservers();
+    }
 }
