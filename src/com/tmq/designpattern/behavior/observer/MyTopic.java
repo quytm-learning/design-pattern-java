@@ -10,7 +10,7 @@ public class MyTopic implements Subject {
 
     private List<Observer> observers;
     private String message;
-    private boolean changed;
+//    private boolean changed;
 //    private final Object MUTEX = new Object();
 
     public MyTopic() {
@@ -45,7 +45,7 @@ public class MyTopic implements Subject {
     public void postMessage(String message) {
         System.out.println("Message Posted to Topic: " + message);
         this.message = message;
-        this.changed = true;
+//        this.changed = true;
         notifyObservers();
     }
 }
