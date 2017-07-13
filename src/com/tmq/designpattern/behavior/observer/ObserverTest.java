@@ -20,8 +20,11 @@ public class ObserverTest {
         ob2.setSubject(topic);
         ob3.setSubject(topic);
 
+        System.out.println("-------- Observer 1 update: ");
         ob1.update();
+        System.out.println("------------------------");
 
+        System.out.println("Topic update :");
         topic.postMessage("new message");
     }
 }
