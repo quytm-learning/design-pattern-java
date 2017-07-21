@@ -80,7 +80,7 @@ Mọi thứ vẫn ổn!
 Tiếp theo, khi thanh toán ta có thêm một phương thức pay():
 
 ```
-void pay() {
+int pay() {
     int cost = 0;
     for (ItemElement item : listElements) {
         if (item instance of Book) {
@@ -172,7 +172,7 @@ Lúc này, method pay() được cài đặt vô cùng đơn giản, ta cũng kh
 quan tâm tới Object ItemElement là class nào
 
 ```
-void pay() {
+int pay() {
     int cost = 0;
     for (ItemElement item : listElements) {
         cost += item.accept(visitor);
