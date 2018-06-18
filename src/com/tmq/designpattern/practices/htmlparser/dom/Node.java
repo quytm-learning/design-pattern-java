@@ -6,12 +6,11 @@ import java.util.List;
 /**
  * Created by quytm58 on 20/07/17.
  */
-public abstract class Node implements Item{
+public abstract class Node implements Item {
 
     private List<Node> nodeTree;
+    private String name;
     private String content;
-    private String start;
-    private String end;
 
     public Node() {
         nodeTree = new ArrayList<>();
@@ -33,11 +32,13 @@ public abstract class Node implements Item{
         this.content = content;
     }
 
-    public String getStart() {
-        return start;
+
+    public String getName() {
+        return name;
     }
 
-    public String getEnd() {
-        return end;
+    public void setName(String name) {
+        this.name = name;
     }
+
 }
