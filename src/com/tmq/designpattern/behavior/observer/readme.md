@@ -15,3 +15,16 @@ có thể truy cập và thông báo, gửi notification
 
 ## Implementation
 
+
+## Usage of Observer
+
+- 
+
+## Observer vs Publisher/Subscriber
+
+![difference of observer and publisher/subscribers](https://cdn-images-1.medium.com/max/1000/1*NcicKEqwUaI8VEc-Ejk6Dg.jpeg)
+
+## Note
+
+Observer mang tính bị động, nếu client "quên" xử lý các action này thì chương trình không 
+thể chạy đúng
