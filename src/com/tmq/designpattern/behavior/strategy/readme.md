@@ -16,9 +16,19 @@ và client sẽ quyết định sử dụng thuật toán nào cho nhiệm vụ 
 
 Ví dụ cụ thể cho Strategy đó là Collections.sort()
 
+![diagram](https://i.stack.imgur.com/M6f7O.png)
+
 ## Implementation
 
 Trong code demo có triển khai mô hình:
 
 ![diagram](https://cdn.journaldev.com/wp-content/uploads/2013/07/Strategy-Pattern-450x261.png)
+
+## Note
+
+Cần phân biệt Strategy và Command pattern, 2 thằng này khá là giống nhau,
+Strategy sử dụng trong trường hợp có nhiều thuật toán để xử lý vấn đề,
+nó thay đổi ruột của phương thức từ đó thay đổi luôn behavior của phương
+thức đó, trong khi Command sử dụng trong trường hợp có nhiều action,
+client sử dụng từng đối tượng Command thì sẽ nhận được một kết quả khác nhau
 
